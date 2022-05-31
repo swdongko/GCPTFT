@@ -140,5 +140,10 @@ resource "google_container_cluster" "primary" {
       issue_client_certificate = false
     }
   }
+  enable_binary_authorization = true
+  enable_intranode_visibility = true
+  pod_security_policy_config {
+    enabled = true
+  }
 }
 
