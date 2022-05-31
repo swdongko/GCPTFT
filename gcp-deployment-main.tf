@@ -140,5 +140,6 @@ resource "google_container_cluster" "primary" {
       issue_client_certificate = false
     }
   }
+  min_master_version = "1.12"
 }
 
