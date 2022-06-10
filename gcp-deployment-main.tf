@@ -141,5 +141,6 @@ resource "google_container_cluster" "primary" {
     }
   }
   enable_binary_authorization = true
+  enable_intranode_visibility = true
 }
 
